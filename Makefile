@@ -1,7 +1,7 @@
 all: run
 
 run: 
-	g++ -g ./c++/easy/climbingStairs.cpp
+	g++ -g ./c++/easy/longestcommonprefix.cpp
 	./a.out
 
 clean: 

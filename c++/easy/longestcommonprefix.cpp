@@ -1,4 +1,23 @@
-string longestCommonPrefix(vector<string>& strs) {
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+// std::string longestCommonPrefix(std::vector<std::string>& v) {
+//     std::string ans="";
+//     std::sort(v.begin(),v.end());
+//     int n=v.size();
+//     std::string first=v[0],last=v[n-1];
+//     for(int i=0;i<std::min(first.size(),last.size());i++){
+//         if(first[i]!=last[i]){
+//             return ans;
+//         }
+//         ans+=first[i];
+//     }
+//     return ans;
+// }
+
+std::string longestCommonPrefix(std::vector<std::string>& strs) {
     if (strs.empty()) {
         return "";
     }
@@ -19,3 +38,12 @@ string longestCommonPrefix(vector<string>& strs) {
     // Если мы дошли до этой точки, то весь первый строка - общий префикс
     return strs[0];
 }
+
+int main() {
+    // std::vector<std::string> v = {"tanga", "fanta", "sange"};
+    std::vector<std::string> v = {"ca", "ba", "ta"};
+    longestCommonPrefix(v);
+    std::cout<<longestCommonPrefix(v)<<std::endl;
+    return 0;
+}
+

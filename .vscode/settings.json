@@ -3,6 +3,13 @@
     "__config": "cpp",
     "cstdio": "cpp",
     "cstdint": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "iosfwd": "cpp",
+    "iterator": "cpp",
+    "vector": "cpp",
+    "memory": "cpp",
+    "utility": "cpp",
+    "type_traits": "cpp",
+    "algorithm": "cpp"
   }
 }
