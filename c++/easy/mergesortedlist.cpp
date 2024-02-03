@@ -54,8 +54,9 @@ int main() {
     list1->next->next = new ListNode(4);
 
     ListNode* list2 = new ListNode(1);
-    list2->next = new ListNode(3);
-    list2->next->next = new ListNode(4);
+    list2->next = new ListNode(2);
+    list2->next->next = new ListNode(3);
+    list2->next->next->next = new ListNode(4);
 
     ListNode* mergedList1 = mergeTwoLists(list1, list2);
     printList(mergedList1);
